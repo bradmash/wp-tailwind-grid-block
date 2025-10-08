@@ -1,0 +1,64 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-bmashblocks-tailwind-grid-block {
+	border: 1px dotted #f00;
+}
+
+// src/tailwind-grid-block/editor.scss
+
+.wp-block-bmashblocks-tailwind-grid-block {
+
+  // Collapse the inner-blocks wrapper and the layout wrapper
+  > .block-editor-inner-blocks,
+  > .block-editor-inner-blocks > .block-editor-block-list__layout {
+    display: contents;
+  }
+}
+
+// Highlight the grid container block
+.wp-block-bmashblocks-tailwind-grid-block {
+  outline: 2px dashed #ccc;
+  padding: 0.5rem;
+  position: relative;
+
+  &::before {
+    content: 'Grid Container';
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    font-size: 0.75rem;
+    color: #666;
+    background: #f0f0f0;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+  }
+}
+
+// Highlight each grid-column block
+.wp-block-bmashblocks-grid-column {
+  outline: 1px solid #ddd;
+  padding: 0.5rem;
+  background-color: #fafafa;
+
+  &:hover {
+    outline-color: #999;
+    background-color: #f5f5f5;
+  }
+
+  &::before {
+    content: 'Column';
+    font-size: 0.7rem;
+    color: #999;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+}
+
+// Optional: add a subtle hover effect to all blocks
+.block-editor-block-list__block:hover {
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}

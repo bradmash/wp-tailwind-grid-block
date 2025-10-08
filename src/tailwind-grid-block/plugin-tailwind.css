@@ -1,0 +1,29 @@
+/* 
+    Well... "safelist" key via tailwind.config.js regex doesn't work in v4, good times... 
+    It really doesn't work well even with hardcoded values, so here we are...
+    @see https://github.com/tailwindlabs/tailwindcss/discussions/15291 
+    @see https://stackoverflow.com/questions/79323991/how-is-it-possible-to-specify-a-safelist-in-tailwindcss-v4-is-it-possible-to-li
+    Based on trying every permutation I could think of we will just do as follows with a prefix for our block.
+    Anyone who uses this set up... you're welcome, because lots of energy drinks were harmed in the making of this plugin.
+*/
+
+/* import only theme and utilities; explicitly avoid preflight */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme) prefix(tgb);
+@import "tailwindcss/utilities.css" layer(utilities) source(none) prefix(tgb);
+
+/* These are our bare minimum Tailwind classes needed for this plugin.*/
+/* Version 1 of this plugin will only use a subset of the source inlined classes below. */
+/* "safelist" via "source inline" - still works because utilities were registered... */
+@source inline('tgb:{,sm:,md:,lg:,xl:,2xl:}grid-cols-{{1..12}}');
+@source inline('tgb:{,sm:,md:,lg:,xl:,2xl:}gap-{{0..12}}');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@source inline('tgb:{,sm:,md:,lg:,xl:,2xl:}flex');
+@source inline('tgb:{,sm:,md:,lg:,xl:,2xl:}grid');
+@source inline('tgb:{,sm:,md:,lg:,xl:,2xl:}block');
+@source inline('tgb:{,sm:,md:,lg:,xl:,2xl:}hidden');
+@source inline('tgb:{,sm:,md:,lg:,xl:,2xl:}flex-1');

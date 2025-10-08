@@ -1,0 +1,59 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "bmashblocks/tailwind-grid-block",
+	"version": "0.1.0",
+	"title": "Tailwind Grid Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"innerBlocks": true
+	},
+	"attributes": {
+		"tagName": {
+			"type": "string",
+			"default": "div"
+		},
+		"role": {
+			"type": "string",
+			"default": ""
+		},
+		"ariaType": {
+			"type": "string",
+			"default": "aria-label"
+		},
+		"ariaValue": {
+			"type": "string",
+			"default": ""
+		},
+		"layout": {
+			"type": "string",
+			"default": "grid"
+		},
+		"columns": {
+			"type": "number",
+			"default": 3
+		},
+		"columnsSm": { "type": "number", "default": null },
+		"columnsMd": { "type": "number", "default": null },
+		"columnsLg": { "type": "number", "default": null },
+		"columnsXl": { "type": "number", "default": null },
+		"columns2Xl": { "type": "number", "default": null },
+		"gap": {
+			"type": "string",
+			"default": "gap-4"
+		},
+		"gapSm": { "type": "string", "default": null },
+		"gapMd": { "type": "string", "default": null },
+		"gapLg": { "type": "string", "default": null },
+		"gapXl": { "type": "string", "default": null },
+		"gap2Xl": { "type": "string", "default": null }
+	},
+	"textdomain": "tailwind-grid-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"viewScript": "file:./view.js"
+}
