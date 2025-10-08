@@ -1,5 +1,8 @@
 # WP Tailwind Grid Block
 
+Requires WordPress at least: 6.7  
+Tested up to WordPress: 6.8  
+
 A responsive, production-ready WordPress block powered by Tailwind CSS with scoped utility classes and flexible layout controls. Designed for developers and designers who want full control over grid layouts in the block editor.
 
 This plugin uses a custom Tailwind prefix (`tgb:`) to avoid style conflicts and ensure clean integration with any theme. It supports responsive grid columns, gap controls, semantic HTML tags, ARIA attributes, and intuitive editor styles for selecting blocks.

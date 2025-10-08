@@ -44,7 +44,7 @@ export default function Edit({ clientId, attributes, setAttributes }) {
     };
     const allowedBlocks = getBlockTypes()
         .map((block) => block.name)
-        .filter((name) => !name.startsWith('bmashblocks/'));
+        .filter((name) => !name.startsWith('bmashblocks/tailwind-grid-block'));
 
     return (
         <>

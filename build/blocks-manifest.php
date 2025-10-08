@@ -3,6 +3,9 @@
 return array(
 	'grid-column' => array(
 		'name' => 'bmashblocks/grid-column',
+		'parent' => array(
+			'tailwind-grid-block/tailwind-grid-block'
+		),
 		'title' => 'Grid Column',
 		'category' => 'layout',
 		'supports' => array(
@@ -38,11 +41,11 @@ return array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'bmashblocks/tailwind-grid-block',
-		'version' => '0.1.0',
+		'version' => '1.0.0',
 		'title' => 'Tailwind Grid Block',
 		'category' => 'widgets',
 		'icon' => 'smiley',
-		'description' => 'Example block scaffolded with Create Block tool.',
+		'description' => '(Tailwind Grid Block Container) A responsive, accessible grid layout block powered by Tailwind CSS.',
 		'example' => array(
 			
 		),
@@ -122,7 +125,6 @@ return array(
 		),
 		'textdomain' => 'tailwind-grid-block',
 		'editorScript' => 'file:./index.js',
-		'editorStyle' => 'file:./index.css',
-		'viewScript' => 'file:./view.js'
+		'editorStyle' => 'file:./index.css'
 	)
 );

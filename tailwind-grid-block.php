@@ -2,7 +2,8 @@
 /**
  * Plugin Name:       Tailwind Grid Block
  * Description:       A responsive, accessible grid layout block powered by Tailwind CSS.
- * Version:           0.1.0
+ * Version:           1.0.0
+ * Tested up to:      6.8
  * Requires at least: 6.7
  * Requires PHP:      7.4
  * Author:            Bmashblocks

@@ -1,5 +1,6 @@
 {
   "name": "bmashblocks/grid-column",
+  "parent": ["tailwind-grid-block/tailwind-grid-block"],
   "title": "Grid Column",
   "category": "layout",
   "supports": {
