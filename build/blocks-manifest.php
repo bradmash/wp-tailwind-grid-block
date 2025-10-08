@@ -4,9 +4,9 @@ return array(
 	'grid-column' => array(
 		'name' => 'bmashblocks/grid-column',
 		'parent' => array(
-			'tailwind-grid-block/tailwind-grid-block'
+			'bmashblocks/tailwind-grid-block'
 		),
-		'title' => 'Grid Column',
+		'title' => 'Grid Column (bmashblocks)',
 		'category' => 'layout',
 		'supports' => array(
 			'html' => false,
@@ -42,7 +42,7 @@ return array(
 		'apiVersion' => 3,
 		'name' => 'bmashblocks/tailwind-grid-block',
 		'version' => '1.0.0',
-		'title' => 'Tailwind Grid Block',
+		'title' => 'Tailwind Grid Block (bmashblocks)',
 		'category' => 'widgets',
 		'icon' => 'smiley',
 		'description' => '(Tailwind Grid Block Container) A responsive, accessible grid layout block powered by Tailwind CSS.',

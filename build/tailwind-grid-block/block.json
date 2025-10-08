@@ -3,7 +3,7 @@
   "apiVersion": 3,
   "name": "bmashblocks/tailwind-grid-block",
   "version": "1.0.0",
-  "title": "Tailwind Grid Block",
+  "title": "Tailwind Grid Block (bmashblocks)",
   "category": "widgets",
   "icon": "smiley",
   "description": "(Tailwind Grid Block Container) A responsive, accessible grid layout block powered by Tailwind CSS.",
