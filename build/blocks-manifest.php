@@ -46,6 +46,9 @@ return array(
 		'category' => 'widgets',
 		'icon' => 'smiley',
 		'description' => '(Tailwind Grid Block Container) A responsive, accessible grid layout block powered by Tailwind CSS.',
+		'allowedBlocks' => array(
+			'bmashblocks/tailwind-grid-block'
+		),
 		'example' => array(
 			
 		),
